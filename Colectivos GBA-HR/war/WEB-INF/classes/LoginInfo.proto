@@ -1,0 +1,21 @@
+package colectivos;
+
+option java_package = "eu.hellek.gba.proto";
+option java_outer_classname = "LoginInfoProtos";
+
+message LoginInfo {
+	required bool loggedIn = 1;
+	optional string loginUrl = 2;
+	optional string logoutUrl = 3;
+	optional string emailAddress = 4;
+	optional string nickname = 5;
+	
+	message UserFavouritePositionProxy {
+		required double lat = 1;
+		required double lon = 2;
+		required string name = 3;
+		required string key = 4;
+	}
+	
+	repeated UserFavouritePositionProxy favourites = 6;
+}

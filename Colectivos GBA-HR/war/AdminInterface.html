@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="Colectivos_GBA.css">
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
+    <title>Admin Interface</title>
+
+    <script type="text/javascript" language="javascript" src="admin_interface/admin_interface.nocache.js"></script>
+    <script type="text/javascript"> 
+		  var browserSupportFlag =  new Boolean();
+		  var initialLocation;
+		  var map;
+		  var salzburg;
+		  var poly;
+		    
+		  function initialize() {
+			salzburg = new google.maps.LatLng(-34.604389,-58.410873);
+		    var myOptions = {
+		      zoom: 11,
+		      mapTypeId: google.maps.MapTypeId.ROADMAP
+		    }
+		    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		    var mapdiv = document.getElementById("map_canvas");
+		    mapdiv.style.width = '600px';
+		    mapdiv.style.height = '400px';
+		    
+		    if(navigator.geolocation) {
+		        browserSupportFlag = true;
+		        navigator.geolocation.getCurrentPosition(function(position) {
+				  checkLocation(position);
+		        }, function() {
+		          handleNoGeolocation(browserSupportFlag);
+		        });
+		    } else {
+		        browserSupportFlag = false;
+		        handleNoGeolocation(browserSupportFlag);
+		    }
+		    
+		    var polyOptions = {
+				strokeColor: '#000000',
+				strokeOpacity: 1.0,
+				strokeWeight: 3
+			}
+			poly = new google.maps.Polyline(polyOptions);
+		    poly.setMap(map);
+		  }
+		  
+		  function checkLocation(position) {
+			  var lat = position.coords.latitude;
+			  var lon = position.coords.longitude
+			  if(lat < -34.0 && lat > -35.0 && lon < -57.8 && lat > -59.3) {
+	          	initialLocation = new google.maps.LatLng(lat,lon);
+	          	map.setCenter(initialLocation);
+			  } else {
+				  handleNoGeolocation(true);
+			  }
+		  }
+		  
+		  function handleNoGeolocation(errorFlag) {
+			    if (errorFlag == true) {
+			      initialLocation = salzburg;
+			    } else {
+			      initialLocation = salzburg;
+			    }
+			    map.setCenter(initialLocation);
+		  }
+		  
+		  function loadScript() {
+		    var script = document.createElement("script");
+		    script.type = "text/javascript";
+		    script.src = "https://maps.google.com/maps/api/js?sensor=false&callback=initialize";
+		    document.body.appendChild(script);
+		  }
+		  
+		  function drawPolyLine(pts, clear, color) {
+			var polyOptions = {
+				strokeColor: '#000000',
+				strokeOpacity: 1.0,
+				strokeWeight: 3
+			}
+			if(clear == true) {
+				poly.setMap(null);
+		    } else {
+		    	polyOptions.strokeColor = color;
+		    }
+			poly = new google.maps.Polyline(polyOptions);
+			poly.setMap(map);
+			for (i = 0; i < pts.length; i=i+2) {
+				poly.getPath().push(new google.maps.LatLng(pts[i],pts[i+1]));	
+			}
+		  }
+		  
+		  window.onload = loadScript;
+	</script>
+  </head>
+
+  <body>
+    
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <h1>Administration Interface</h1>
+
+    <table align="center">
+      <tr>
+        <td colspan="2" style="font-weight:bold;"></td>        
+      </tr>
+      <tr>
+        <td id="nameFieldContainer"></td>
+        <td id="sendButtonContainer"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
+      </tr>
+    </table>
+    <div id="maindiv"></div>
+    <div id="map_canvas"></div> 
+  </body>
+</html>

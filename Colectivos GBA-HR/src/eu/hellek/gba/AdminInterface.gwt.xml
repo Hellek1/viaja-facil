@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='admin_interface'>
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.user.theme.clean.Clean' />
+	<inherits name='com.google.gwt.maps.Maps' />
+	<inherits name="com.google.code.gwt.geolocation.Html5Geolocation" />
+
+	<source path='client' />
+	<source path='client/admin' />
+	<source path='shared' />
+
+	<entry-point class="eu.hellek.gba.client.admin.AdminInterface" />
+</module>

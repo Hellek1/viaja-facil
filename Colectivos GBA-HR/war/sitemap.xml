@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+      	<loc>http://www.viaja-facil.com/</loc>
+      	<priority>1</priority>
+      </url>
+      <url>
+      	<loc>http://www.viaja-facil.com/faq.es.html</loc>
+      	<priority>0.6</priority>
+      </url>
+      <url>
+      	<loc>http://www.viaja-facil.com/faq.en.html</loc>
+      	<priority>0.6</priority>
+      </url>
+      <url>
+      	<loc>http://www.viaja-facil.com/impressum.html</loc>
+      	<priority>0.3</priority>
+      </url>
+      <url>
+      	<loc>http://www.viaja-facil.com/all-lines.html</loc>
+      	<priority>0.2</priority>
+      </url>
+</urlset>
+      

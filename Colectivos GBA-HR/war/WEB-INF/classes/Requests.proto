@@ -1,0 +1,24 @@
+package colectivos;
+
+option java_package = "eu.hellek.gba.proto";
+option java_outer_classname = "RequestsProtos";
+
+message DirectSearchRequest {
+	required float lat1 = 1;
+	required float lon1 = 2;
+	required float lat2 = 3;
+	required float lon2 = 4;
+	required bool ignoreTrains = 5;
+	required bool ignoreSubte = 6;
+}
+
+message IndirectSearchRequest {
+	required float lat1 = 1;
+	required float lon1 = 2;
+	required float lat2 = 3;
+	required float lon2 = 4;
+	required bool ignoreTrains = 5;
+	required bool ignoreSubte = 6;
+	repeated string mlkSet1String = 7;
+	repeated string mlkSet2String = 8;
+}

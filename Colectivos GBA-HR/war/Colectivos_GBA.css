@@ -1,0 +1,233 @@
+
+.contextMenu {
+	position: absolute;
+	min-width: 80px;
+	max-width: 100px;
+	width: 80px;
+	min-height: 30px;
+	max-height: 40px;
+	height: 35px;
+	z-index: 1000;
+	background: #fff;
+	border-top: solid 1px #CCC;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #676767;
+	border-right: solid 1px #676767;
+	padding: 2px;
+	margin: 0px;
+	top: 35px;
+	left: 240px;
+	display: inline;
+}
+
+.contextMenuLabel:hover {
+	background-color: lavender;
+}
+
+.stationLabel {
+	position: absolute;
+	z-index: 1000;
+	background: #fff;
+	top: 35px;
+	left: 240px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 1px;
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #676767;
+	border-bottom: 1px solid #676767;
+	border-left: 1px solid #CCC;
+	font-size: smaller;
+	white-space: nowrap;
+}
+
+.locateButton {
+	background: transparent url("img/locateButton.png") no-repeat center top;
+	width: 20px;
+  	height: 20px;
+  	margin: 0;
+  	padding: 20px 0 0;
+  	border: 0;
+}
+
+.switchButton {
+	background: #FFFFFF url("img/pfeile.png") no-repeat center center;
+	width: 25px;
+  	height: 40px;
+  	margin: 0;
+	padding: 5px 7px;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+	font-size: small;
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #a0a0a0;
+	border-radius: 3px;
+}
+
+.searchButton {
+	background-color: #4D90FE;
+	height: 50px;
+	width: 75px;
+	color: white;
+	margin: 0;
+	padding: 5px 7px;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+	font-size: small;
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #a0a0a0;
+	border-radius: 3px;
+}
+
+.searchButton[disabled] {
+	background-color: grey;
+}
+
+.selectLanguagePanel {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	z-index: 20;
+	height: 50px;
+}
+
+.valignmiddle {
+	vertical-align: middle;
+}
+
+.bigmarginleft {
+	margin-left: 50px;
+}
+
+.bigmarginright {
+	margin-right: 50px;
+}
+
+.gwt-Image-selectLanguage {
+	margin: 2px;
+}
+.northPanel {
+	padding: 0px;
+	background-color: #F5F5F5;
+}
+
+.southPanel {
+	padding: 0px;
+	background-color: #F5F5F5;
+}
+
+.selectLinesGrid {
+	
+}
+
+.resultPosLink {
+	background-color: lavender;
+}
+
+.resultPosLink:hover {
+	text-decoration: underline;
+}
+
+#textbox-to {
+	width: 350px;
+	height: 18px;	
+}
+
+#textbox-from {
+	width: 350px;
+	height: 18px;	
+}
+
+.favouritesMenu {
+	position: absolute;
+	width: 330px;
+	height: 0px;
+	z-index: 1000;
+	background: #fff;
+	border-top: solid 1px #CCC;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #676767;
+	border-right: solid 1px #676767;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	left: 50px;
+	display: inline;
+	overflow: hidden;
+}
+
+.favouritesMenuItem {
+	width: 325px;
+	height: 22px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.favouritesMenuItem:hover {
+	background-color: lavender;
+}
+
+.favouritesMenuLabel {
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+	width: 294px;
+}
+
+.favouritesMenuStar {
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+
+.expandImage {
+	width: 20px;
+  	height: 20px;
+}
+
+.faqitem-header {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+.faqitem-content {
+	margin-right: 10px;
+	text-align: justify;
+}
+.impressum-header {
+	margin-left: 1.2em;
+	font-size: larger;
+	font-weight: bold;
+}
+.impressum-content {
+	margin-left: 1em;
+}
+.faqbody {
+ 	max-width: 800px ;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+.spinningImage {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -12px;
+}
+.searchingLabel {
+	position: absolute;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 120px;
+}
+.newsheader {
+	margin-top: 15px;
+	font-size: large;
+}
+.newsitem {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: justify;
+}

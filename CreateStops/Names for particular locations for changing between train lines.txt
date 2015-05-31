@@ -1,0 +1,54 @@
+catedral1	A, D, E
+mayoy9		A, C
+once1		A, H, FFCC Sarmiento
+primju1		A, FFCC Sarmiento
+
+lacroze1	B, FFCC Urqiza
+chacarita1	B, FFCC San Martin
+pue1		B, H
+corry9		B, C, D
+correo1		B
+
+retiro1		C, FFCC Mitre, FFCC San Martin, FFCC Belgrano Norte
+indepy9		C, E
+const1		C, FFCC Roca
+
+carra1		D, FFCC Mitre
+palermo1	D, FFCC San Martin
+
+jujuy1		E, H
+virreyes1	E, Premetro
+
+illia1		Premetro, FFCC Belgrano Sur
+
+mcentral1	FFCC Belgrano Sur, FFCC Roca
+bonzi1		FFCC Belgrano Sur (varios ramales)
+tapi1		FFCC Belgrano Sur (varios ramales)
+
+haedo1		FFCC Sarmiento, FFCC Roca
+moreno1		FFCC Sarmiento (varios ramales)
+
+maipu1		FFCC Tren de la Costa, FFCC Mitre
+
+belgranor	FFCC Mitre (varios ramales)
+victoria1	FFCC Mitre (varios ramales)
+balle1		FFCC Mitre (varios ramales)
+
+temper1		FFCC Roca (varios ramales)
+eze1		FFCC Roca (varios ramales)
+berat1		FFCC Roca (varios ramales)
+claypo1		FFCC Roca (varios ramales)
+bosq1		FFCC Roca (varios ramales)
+
+lini1		Metrobus, FFCC Sarimiento
+
+
+Diverging names that are required to avoid accidental matching of stations that are in totally different locations:
+florida1	Estación Florida	Subte B
+florida2	Estación Florida	FFCC Mitre
+saenz1		Estación Saenz Pena	Subte A
+caser1		Estación Caseros	Subte H
+moreno2		Estación Moreno		Subte C
+moreno3		Estación Moreno		FFCC Urquiza
+callao1		Estación Callao		Subte D
+callao2		Estación Callao		Subte B

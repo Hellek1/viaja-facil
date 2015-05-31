@@ -1,0 +1,16 @@
+# view land\res/layout-land/main.xml #generated:42
+# view res/layout/main.xml #generated:27
+-keep class com.google.android.maps.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class eu.hellek.viajafacil.android.AccountListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class eu.hellek.viajafacil.android.FavoritesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class eu.hellek.viajafacil.android.ResultsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class eu.hellek.viajafacil.android.ViajaFacilActivity { <init>(...); }
+

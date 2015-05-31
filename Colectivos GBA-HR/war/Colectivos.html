@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Buscar conexiones en colectivo, subte o tren en la Ciudad Buenos Aires, Argentina y el conurbano (GBA)">
+    <meta name="keywords" content="colectivos, trenes, subte, buenos aires, gba, caba, argentina, transporte publico, retiro, constitucion, once, estacion, recorrido">
+
+    <link type="text/css" rel="stylesheet" href="Colectivos_GBA.css">
+	<link rel="icon" href="/favicon.png" type="image/png" />
+
+    <title>Viaja Fácil - Todos los Colectivos, Subtes y Trenes de Buenos Aires y GBA - Mapa de recorridos de transportes públicos</title>
+	<script type="text/javascript">
+		var getCookie = function(c_name) {
+		  if (document.cookie.length > 0) {
+		    c_start = document.cookie.indexOf(c_name + "=");
+		    if (c_start != -1) {
+		      c_start = c_start + c_name.length+1;
+		      c_end = document.cookie.indexOf(";", c_start);
+		      if (c_end == -1) c_end = document.cookie.length;
+		      return unescape(document.cookie.substring(c_start,c_end));
+		    }
+		  }
+		  return "";
+		}
+
+		var locale = getCookie("locale");
+		if (!locale) {
+		  locale = "es";
+		}
+		
+		document.write("<meta name='gwt:property' content='locale=" + locale + "' />");
+		
+		var mobile = getCookie("mobile");
+		if (mobile == "yes" || document.URL == "http://m.viaja-facil.com" || document.URL == "http://m.viaja-facil.com/") {
+			document.location = "m.html";
+		} else if (mobile == "no") {
+			// do nothing
+		} else { // when no cookie is set and no special url is used, ask the user
+			if (screen.width < 640 || (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || ((navigator.userAgent.match(/Android/i)) && (navigator.userAgent.match(/Mobile/i)))) {
+				var answer = confirm("Quiere cambiar por la version para celulares?");
+				if (answer) {
+					document.cookie = "mobile=yes;";
+					document.location = "m.html";
+				} else {
+					document.cookie = "mobile=no;";
+				}
+			}
+		}
+	</script>
+    <script type="text/javascript" src="colectivos/colectivos.nocache.js"></script>
+  </head>
+
+  <body>
+  
+    <noscript>
+    	<h1>Viaja Fácil - Todos los Colectivos, Subtes y Trenes de Buenos Aires y GBA</h1>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.<br/>
+        Este web necesita JavaScript para funcionar!
+      </div>
+      <a href="impressum.html">Sobre nosotros / About us / Impressum</a><br/>
+      <a href="faq.es.html">Como viajo con viaja fácil? Preguntas Frecuentes</a>&nbsp;/&nbsp;<a href="faq.en.html">How do I travel with viaja fácil? / FAQ</a><br/>
+      <a href="all-lines.html">Lista de Lineas</a><br/>
+      <a href="m.html">Versión para celulares</a>
+    </noscript>
+    <div id="leftcontainer" style="width: 300px; position: absolute; left: 0px; top: 100px; z-index: 5;">
+		<div id="news" style="margin-left: 15px; margin-top: 15px; margin-right: 15px;" >
+			<div class="newsheader">News</div>
+			<div class="newsitem">Todo</div>
+		</div>
+	</div>
+	<div id="rightad" style="width: 160px; height: 600px; position: absolute; top: 100px; right: 0px; z-index: 5;">
+	</div>
+  </body>
+</html>

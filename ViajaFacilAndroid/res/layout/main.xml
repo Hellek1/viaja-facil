@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+		<EditText android:layout_weight="1" android:layout_width="fill_parent"
+			android:inputType="textPostalAddress" android:layout_height="fill_parent"
+			android:hint="@string/from" android:id="@+id/txtFrom"
+			android:singleLine="true"></EditText>
+		<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_input_get" android:id="@+id/btnFrom"></ImageButton>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+		<EditText android:layout_weight="1" android:layout_width="fill_parent"
+			android:inputType="textPostalAddress" android:layout_height="fill_parent"
+			android:hint="@string/to" android:id="@+id/txtTo"
+			android:singleLine="true"></EditText>
+			<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_input_get" android:id="@+id/btnTo"></ImageButton>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout2">
+		<Button android:layout_height="wrap_content" android:text="@string/search" android:layout_width="wrap_content" android:id="@+id/btnSearch" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></Button>
+		<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:id="@+id/btnResults" android:text="@string/results" android:enabled="false"></Button>
+	</RelativeLayout>
+	<com.google.android.maps.MapView
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:clickable="true"
+  		android:enabled="true"
+  		android:apiKey="insert api key here" android:id="@+id/mapWidget"/>
+</LinearLayout>

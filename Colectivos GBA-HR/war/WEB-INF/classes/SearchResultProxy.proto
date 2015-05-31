@@ -1,0 +1,31 @@
+package colectivos;
+
+option java_package = "eu.hellek.gba.proto";
+option java_outer_classname = "SearchResultProtos";
+
+message SearchResultProxy {
+	optional string error = 1;
+	repeated string mlkSet1String = 2;
+	repeated string mlkSet2String = 3;
+	
+	message ConnectionProxy {
+		
+		message LineProxy {
+			optional string key = 1;
+			optional string linenum = 2;
+			optional string ramal = 3;
+			required int32 type = 4;
+			repeated float relevantPoints = 5;
+			repeated float allPoints = 6;
+			repeated string alternativeLines = 7;
+			repeated string stations = 8;
+			required int32 distance = 9;
+			optional string startStreet = 10;
+			optional string destStreet = 11;
+		}
+		
+		repeated LineProxy lines = 1;
+	}
+	
+	repeated ConnectionProxy connections = 4;
+}

@@ -1,0 +1,51 @@
+package eu.hellek.gba.client.pub.common;
+
+import com.google.gwt.i18n.client.Constants;
+
+public interface AppConstants extends Constants {
+	String from();
+	String to();
+	String search();
+	String lblSubte_text();
+	String lblTrains_text();
+	String lblSetFrom_text();
+	String lblSetTo_text();
+	String noResultsSearchingIndirect();
+	String searchIndirect();
+	String with();
+	String min();
+	String alternatives();
+	String appTitle();
+	String esp();
+	String eng();
+	String errorTryAgainLater();
+	String noResults();
+	String colectivos();
+	String tooManyRequests();
+	String needsCoockiesEnabled();
+	String login();
+	String logout();
+	String youCanStoreFavourites();
+	String errorWhileSavingFavourite();
+	String errorWhileDeletingFavourite();
+	String addFavourite();
+	String deleteFavourite();
+	String showFavourites();
+	String logInToStoreFavs();
+	String advertisement();
+	String lnkImpressum();
+	String lnkFAQ();
+	String hrefFAQ();
+	String wip();
+	String minDistance();
+	String loc();
+	String btnSwitch();
+	String instr1();
+	String saveFavs();
+	String searchAlreadyRunning();
+	String selectFromMap();
+	String lnkWeb();
+	String searching();
+	String lnkAndroidMarket();
+	String hrefAndroidMarket();
+}

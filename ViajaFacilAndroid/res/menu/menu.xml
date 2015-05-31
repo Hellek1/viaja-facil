@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/invert" android:title="@string/invert" />
+	<item android:id="@+id/switchmap" android:title="@string/mapmode">
+		<menu>
+			<group android:checkableBehavior="single">
+				<item android:id="@+id/switchmapnormal" android:title="@string/mapnormal" android:checked="true" />
+				<item android:id="@+id/switchmapsat" android:title="@string/mapsat" />
+				<item android:id="@+id/switchmaptraffic" android:title="@string/maptraffic" />
+			</group>
+		</menu>	
+	</item>
+	<item android:id="@+id/transports"
+		android:title="@string/transports"
+		android:alphabeticShortcut="q">
+		<menu>
+			<group android:checkableBehavior="all" android:id="@+id/transportsgroup">
+				<item android:id="@+id/colectivos" android:title="@string/colectivos" android:checked="true" android:enabled="false" />
+				<item android:id="@+id/subte" android:title="@string/subte" android:checked="true" />
+				<item android:id="@+id/tren" android:title="@string/trenes" android:checked="true" />
+			</group>
+		</menu>
+	</item>
+</menu>

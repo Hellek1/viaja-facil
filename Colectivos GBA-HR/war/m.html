@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Buscar conexiones en colectivo, subte o tren en la Ciudad Buenos Aires, Argentina y el conurbano (GBA) desde el celular" />
+    <meta name="keywords" content="colectivos, trenes, subte, buenos aires, gba, caba, argentina, transporte publico, retiro, constitucion, once, estacion, para celulares, recorrido" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link type="text/css" rel="stylesheet" href="m.css" />
+	<link rel="icon" href="/favicon.png" type="image/png" />
+
+    <title>Viaja Fácil para Celulares - Todos los Colectivos, Subtes y Trenes de Buenos Aires y GBA</title>
+	<script type="text/javascript">
+		var getCookie = function(c_name) {
+		  if (document.cookie.length > 0) {
+		    c_start = document.cookie.indexOf(c_name + "=");
+		    if (c_start != -1) {
+		      c_start = c_start + c_name.length+1;
+		      c_end = document.cookie.indexOf(";", c_start);
+		      if (c_end == -1) c_end = document.cookie.length;
+		      return unescape(document.cookie.substring(c_start,c_end));
+		    }
+		  }
+		  return "";
+		}
+
+		var locale = getCookie("locale");
+		if (!locale) {
+		  locale = "es";
+		}
+		
+		document.write("<meta name='gwt:property' content='locale=" + locale + "' />");
+	</script>
+    <script type="text/javascript" src="mobile/mobile.nocache.js"></script>
+  </head>
+
+  <body>
+    <noscript>
+    	<h1>Viaja Fácil - Todos los Colectivos, Subtes y Trenes de Buenos Aires y GBA</h1>
+      <div>
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.<br/>
+        Este web necesita JavaScript para funcionar!
+      </div>
+      <a href="impressum.html">Sobre nosotros / About us / Impressum</a><br/>
+      <a href="faq.es.html">Como viajo con viaja fácil? Preguntas Frecuentes</a>&nbsp;/&nbsp;<a href="faq.en.html">How do I travel with viaja fácil? / FAQ</a><br/>
+      <a href="all-lines.html">Lista de Lineas</a>
+    </noscript>
+  </body>
+</html>

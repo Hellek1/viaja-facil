@@ -1,0 +1,35 @@
+Transport Types
+short	long	text
+1	1	"bus"
+2	11	"subte"
+3	21	"tren"
+	13	"Metrobus"
+
+
+
+
+Special strings for streets:
+Streets without stops: Prefix "Au. " or ":ign:"
+Streets that a line uses in both directions: Prefix :2way:
+
+
+Rout names:
+	Line			Branch
+Bus:	100			A - Retiro por Pavón
+Subte	A			Plaza de Mayo
+Tren	FFCC Mitre (Ramal ...)	Retiro
+
+Filename: Linename.gpx
+
+
+
+Train stops that belong together (i.e. represent the same station) must have exactly the same geocell and name
+
+Branches that a subset of a longer line should have the prefix: "XshortX " i.e.: "XshortX B - Lomas del Mirador" to avoid unnecessary calculations and results
+
+
+Import order:
+1.) Lines 1-200 without express branches
+2.) Lines 200+ (Provincia) without express branches
+3.) Express branches for all lines
+4.) Particularly long branches (i.e. to Mercedes, etc.)
