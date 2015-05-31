@@ -23,6 +23,7 @@ TODOS:
 * Enhance create-stops with decent authentication (right now it uses a secret key that simply has to match on server and client side)
 * Translate comments to english
 * Update Google APIs (particularly Maps and Autocomplete) to the latest versions
+* Update Objectify to version 5
 
 If you have questions please open a ticket on Github within the repository and I will try to answer. Please be aware that I have a very intense job and it may take a while for me to respond.
 
